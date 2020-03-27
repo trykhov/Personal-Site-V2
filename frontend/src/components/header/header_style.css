@@ -1,0 +1,36 @@
+#external-links {
+    display: flex;
+    font-size: 4vw;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 60%;
+}
+
+header {
+    animation-duration: 4s;
+    animation-name: header;
+    color: #fff;
+    font-size: 3vw;
+    font-weight: 600;
+    text-align: center;
+}
+
+header > p {
+    margin: 5% auto;
+}
+
+
+@keyframes header {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#headshot {
+    width: 60%;
+    height: 60%;
+}
+
+#pic {
+    display: flex;
+    justify-content: center;
+}

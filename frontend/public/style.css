@@ -1,0 +1,10 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    background-image: url("./mountain_background.jpg");
+    
+    height: 100%;
+}
