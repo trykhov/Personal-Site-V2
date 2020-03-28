@@ -1,7 +1,8 @@
 import React from 'react';
+import AboutMe from './components/about_me/about_me';
 import Header from './components/header/header';
-import SplashPage from './components/front_page/splash';
-import './App.css';
+import NavBar from './components/splash/navbar';
+import './stylesheets/App.css';
 
 function App() {
   return (
@@ -10,8 +11,13 @@ function App() {
         <Header/>
       </section>
       <section id="right-side">
-        <div id="content">
-          <SplashPage />
+        <div id="content-container">
+          <div id="content">
+            <section id="splash">
+              <AboutMe />
+              <NavBar/>
+            </section>
+          </div>
         </div>
       </section>
     </div>

@@ -1,0 +1,13 @@
+.background-info {
+    align-items: center;
+    display: flex;
+    font-size: 2vw;
+    font-weight: bold;
+    margin: 3% 0;
+}
+
+.logo {
+    height: 6%;
+    margin: 0 1%;
+    width: 6%;
+}
