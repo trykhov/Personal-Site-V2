@@ -4,6 +4,10 @@
   height: 100%;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 #left-side {
   align-items: center;
   display: flex;
@@ -19,10 +23,13 @@
 }
 
 #content {
+  align-items: center;
   animation-duration: 4s;
   animation-name: right-slide;
   background-color: black;
   backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
   opacity: 0.5;
   height: 100%;
   width: 100%;
