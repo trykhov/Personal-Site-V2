@@ -19,17 +19,16 @@ import cal_logo from '../../images/berkeley-logo.png';
 const AboutMe = () => {
     return (
         <div className="info-box">
+            <h1>Welcome!</h1>
             <p>
             I'm an experienced software engineer with a passion for making. 
             Throughout my journey, I've garnered a diverse skillset set of technologies used in fields such data analytics to web and mobile development. 
             These skills include mastery in Python, JavaScript, React, Node.js and Ruby on Rails with many more continuously being added.
-
-            <br/>
-            <br />
-            I've worked and developed projects of varying scale complexity such as simple games, full-stack websites and data tools used for company metrics.
-
-            <br />
-            <br />
+            </p>
+            <p>
+                I've worked and developed projects of varying scale complexity such as simple games, full-stack websites and data tools used for company metrics.
+            </p>
+            <p>
             When I'm not building something with code, I'm often building something with my hands such as plastic model kits of giant mechs or learning new things such as foreign languages, science or financial literacy. 
             Let's connect! 
             </p>

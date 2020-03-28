@@ -9,8 +9,10 @@ button:hover {
 }
 
 .info-box {
+  font-size: 1.25vw;
   height: 80%;
   margin-bottom: 3%;
+  font-weight: 550;
 }
 
 #left-side {
@@ -87,5 +89,5 @@ span {
 
 #splash p {
   color: #fff;
-  margin: 0 0 5%;
+  margin: 0 0 2%;
 }

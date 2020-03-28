@@ -1,4 +1,5 @@
 body, html {
+    font-family: 'Montserrat', sans-serif;
     height: 100%;
     margin: 0;
     line-height: 1.5em;
@@ -7,4 +8,9 @@ body, html {
 main {
     background-image: url("./mountain_background.jpg");
     height: 100%;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2vw;
 }

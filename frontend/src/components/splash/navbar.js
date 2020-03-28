@@ -6,7 +6,10 @@ const NavBar = () => {
         <nav>
             <button className="nav-button active">About Me</button>
             <button className="nav-button">Portfolio</button>
-            <button className="nav-button">Resumé</button>
+            <button className="nav-button">
+                <i class="fas fa-file-download"/>
+                   Resumé
+            </button>
         </nav>
     )
 }
