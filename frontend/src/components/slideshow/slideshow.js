@@ -8,7 +8,7 @@ import korra_pic from '../../images/korra.png';
 
 const SlideShow = () => {
 
-    const [projNum, selectProject] = useState(0);
+    const [projNum, setProject] = useState(0);
 
     const projects = {
         0: {
@@ -36,12 +36,12 @@ const SlideShow = () => {
 
     // users can press the left or right arrow to go see the next or prev project
     function traverseProject(num) {
-        selectProject((((projNum + num) % 3) + 3) % 3);
+        setProject((((projNum + num) % 3) + 3) % 3);
     }
 
     // users can click a dot and select a project
     function selectProject(num) {
-        selectProject(num);
+        setProject(num);
     }
 
     const currProject = projects[projNum];
@@ -51,28 +51,34 @@ const SlideShow = () => {
             <div id="slideshow">
                 {/* current slide */}
                 <div className="work-slide fade">
+                    <div className="info-dropdown">
+                        <a className="down">&#9432;</a>
+                    </div>
                     <img className="work-image" src={currProject.src}/>
+                    <div className="info-modal">
+                        <div className="info-container">
+                            <div className="info">
+                                <p className="title">{currProject.title}</p>
+                                <div className="work-links">
+                                    <a>Live</a> | 
+                                    <a> Repo</a>
+                                </div>
+                                <p className="desc">(desc)</p>
+                            </div>
+                        </div>
+                    </div>  
                 </div>
 
                 {/* arrows */}
                 <a className="prev" onClick={() => traverseProject(-1)}>&#10094;</a>
                 <a className="next" onClick={() => traverseProject(1)}>&#10095;</a>
-
-                {/* index dots */}
-                <div id="circle-container">
-                    <span className="dot"></span>
-                    <span className="dot"></span>
-                    <span className="dot"></span>
-                </div>
             </div>
-
-            <p className="title">{currProject.title}</p>
-            <div className="work-links">
-                <a className="link">Live</a> | 
-                <a className="link"> Repo</a>
+            {/* index dots */}
+            <div id="circle-container">
+                <span className="dot" onClick={() => selectProject(0)}></span>
+                <span className="dot" onClick={() => selectProject(1)}></span>
+                <span className="dot" onClick={() => selectProject(2)}></span>
             </div>
-            <p>{currProject.desc}</p>
-            
         </div>
     )
 }
