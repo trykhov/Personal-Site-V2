@@ -7,8 +7,8 @@ const NavBar = () => {
             <button className="nav-button active">About Me</button>
             <button className="nav-button">Portfolio</button>
             <button className="nav-button">
-                <i class="fas fa-file-download"/>
-                   Resumé
+                <i class="fas fa-arrow-alt-circle-down"></i>
+                <span>Resumé</span>
             </button>
         </nav>
     )

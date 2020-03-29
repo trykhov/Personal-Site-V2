@@ -14,3 +14,7 @@ h1 {
     color: #fff;
     font-size: 2vw;
 }
+
+button {
+    outline: none;
+}

@@ -1,3 +1,6 @@
+button span {
+  margin-left: 7%;
+}
 
 nav {
   display: flex;
@@ -14,6 +17,7 @@ nav {
   display: inline-block;
   font-size: 1.5vw;
   font-weight: bold;
+  height: 20%;
   padding: 2%;
   width: 40%;
 }
