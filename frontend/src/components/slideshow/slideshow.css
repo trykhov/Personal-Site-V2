@@ -7,7 +7,12 @@
 }
 
 #circle-container {
+    margin: 1% 0;
     text-align: center;
+}
+
+.desc {
+    line-height: 2em;
 }
 
 .dot {
@@ -33,13 +38,6 @@
     text-align: right;
     width: 97%;
 } 
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
 
 @-webkit-keyframes fade {
     from {opacity: .4}
@@ -79,7 +77,7 @@
 
 
 #info-modal {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.8);
     top: 0;
     width: 100%;
     position: absolute;
@@ -91,26 +89,25 @@
     animation-name: dropdown;
     animation-duration: 1s;
     overflow: hidden;
-    height: 98.3%;
+    height: 99.5%;
 }
 
 @keyframes dropdown {
     from { height: 0% };
-    to { height: 98.3% };
+    to { height: 99.5% };
 }
 
 .disappear {
     animation-name: dropup;
-    animation-duration: 1s;
+    animation-duration: 0s;
     height: 0;
     overflow: hidden;
 }
 
 @keyframes dropup {
-    from { height: 98.3% };
+    from { height: 99.5% };
     to { height: 0 };
 }
-/*  */
 
 
 .prev, .next {
@@ -141,12 +138,28 @@
     position: relative;
 }
 
+.showcase-links {
+    color: #1DA1F2;
+    margin: 0 2%;
+    text-decoration: none;
+}
+
+.showcase-links:hover {
+    text-decoration: underline;
+}
+
+.title, .desc {
+    color: 	#D3D3D3
+}
+
 .title, .work-links {
     text-align: center;
+    margin-bottom: 2%;
 }
 
 .work-image {
     width: 100%;
 }
+
 
 

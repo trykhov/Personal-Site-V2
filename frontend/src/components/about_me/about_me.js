@@ -34,23 +34,23 @@ const AboutMe = () => {
             </p>
             <div className="background-info">
                 <span>Skills: </span>
-                <img className="logo" src={js_logo}/>
-                <img className="logo" src={python_logo}/>
-                <img className="logo" src={react_logo}/>
-                <img className="logo" src={redux_logo}/>
-                <img className="logo" src={node_logo}/>
-                <img className="logo" src={ruby_logo}/>
-                <img className="logo" src={rails_logo}/>
-                <img className="logo" src={mongo_logo}/>
-                <img className="logo" src={postgres_logo}/>
-                <img className="logo" src={html_logo}/>
-                <img className="logo" src={css_logo}/>
+                <img className="logo" src={js_logo} alt="JavaScript"/>
+                <img className="logo" src={python_logo} alt="Python"/>
+                <img className="logo" src={react_logo} alt="React.js"/>
+                <img className="logo" src={redux_logo} alt="Redux"/>
+                <img className="logo" src={node_logo} alt="Node.js"/>
+                <img className="logo" src={ruby_logo} alt="Ruby"/>
+                <img className="logo" src={rails_logo} alt="Ruby on Rails"/>
+                <img className="logo" src={mongo_logo} alt="MongoDB"/>
+                <img className="logo" src={postgres_logo} alt="PostgreSQL"/>
+                <img className="logo" src={html_logo} alt="HTML"/>
+                <img className="logo" src={css_logo} alt="CSS"/>
             </div>
             <div className="background-info">
                 <span>Alumni: </span>
                 <div id="schools">
-                    <img className="logo" src={aa_logo}/>
-                    <img className="logo" src={cal_logo}/>
+                    <img className="logo" src={aa_logo} alt="App Academy"/>
+                    <img className="logo" src={cal_logo} alt="UC Berkeley"/>
                 </div>
             </div>
         </div>
