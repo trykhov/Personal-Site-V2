@@ -1,3 +1,6 @@
+#slideshow-container {
+    border-radius: 4px;
+}
 
 #slideshow {
     position: relative;
@@ -22,6 +25,15 @@
     background-color: #717171;
 }
 
+.exit {
+    color: #fff;
+    font-size: 2vw;
+    margin: 0 auto 2%;
+    padding-top: 1%;
+    text-align: right;
+    width: 97%;
+}
+
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -43,19 +55,18 @@
     width: 100%;
 }
 
-
 .info-container {
     align-items: center;
     display: flex;
     margin: 0 auto;
-    height: 70%;
     width: 80%;
 }
 
-.info-dropdown {
+#info-button {
     background-color: rgba(0,0,0,0.1);
     border-radius: 4px;
     color: #fff;
+    cursor: pointer;
     font-size: 1vw;
     font-weight: bold;
     top: 1%;
@@ -63,10 +74,11 @@
     padding: 0 1%;
     position: absolute;
     text-align: center;
+    transition: background-color 0.6s ease;
 }
 
 
-.info-modal {
+#info-modal {
     background-color: rgba(0,0,0,0.5);
     display: none;
     top: 0;
@@ -95,7 +107,7 @@
     border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
+.prev:hover, .next:hover, #info-button:hover {
     background-color: rgba(0,0,0,0.8);
 }
 

@@ -44,6 +44,22 @@ const SlideShow = () => {
         setProject(num);
     }
 
+    function dropInfoModal() {
+        const infoModal = document.getElementById('info-modal');
+        infoModal.style.display = "block";
+
+        const infoButton = document.getElementById('info-button');
+        infoButton.style.display = "none";
+    }
+
+    function exitModal() {
+        const infoModal = document.getElementById('info-modal');
+        infoModal.style.display = "none";
+
+        const infoButton = document.getElementById('info-button');
+        infoButton.style.display = "inline";
+    }
+
     const currProject = projects[projNum];
     return (
         <div id="slideshow-container">
@@ -51,11 +67,12 @@ const SlideShow = () => {
             <div id="slideshow">
                 {/* current slide */}
                 <div className="work-slide fade">
-                    <div className="info-dropdown">
-                        <a className="down">&#9432;</a>
-                    </div>
+                    <a id="info-button" onClick={() => dropInfoModal()}>&#9432;</a>
                     <img className="work-image" src={currProject.src}/>
-                    <div className="info-modal">
+                    <div id="info-modal">
+                        <div className="exit">
+                            <i className="fas fa-times" onClick={() => exitModal()}/>
+                        </div>
                         <div className="info-container">
                             <div className="info">
                                 <p className="title">{currProject.title}</p>
