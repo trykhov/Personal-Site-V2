@@ -7,8 +7,6 @@
 }
 
 header {
-    animation-duration: 4s;
-    animation-name: header;
     color: #fff;
     font-size: 3vw;
     font-weight: 600;
@@ -19,11 +17,6 @@ header > p {
     margin: 5% auto;
 }
 
-
-@keyframes header {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
 
 #headshot {
     width: 60%;

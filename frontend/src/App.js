@@ -10,9 +10,16 @@ function App() {
   const [index, setIndex] = useState(0);
   
   function changeComponent(index) {
-    // console.log(e.target);
     if(index === 0) return <AboutMe />
     if(index === 1) return <Portfolio />
+  }
+
+  function activeTab(e, index) {
+    // shows which tab user is currently on
+    setIndex(index);
+    const otherNavButtons = document.querySelectorAll(".nav-button");
+    otherNavButtons.forEach(nav => nav.classList.remove('active'));
+    e.target.classList.add('active');
   }
 
   return (
@@ -26,8 +33,8 @@ function App() {
             <section id="splash">
               {changeComponent(index)}
               <nav>
-                <button className="nav-button active" onClick={()=> setIndex(0)}>About Me</button>
-                <button className="nav-button" onClick={() => setIndex(1)}>Portfolio</button>
+                <button className="nav-button active" onClick={e => activeTab(e, 0)}>About Me</button>
+                <button className="nav-button" onClick={e => activeTab(e, 1)}>Portfolio</button>
                 <button className="nav-button">
                     <i className="fas fa-arrow-alt-circle-down"></i>
                     <span>Resumé</span>

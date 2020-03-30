@@ -19,38 +19,40 @@ import cal_logo from '../../images/berkeley-logo.png';
 const AboutMe = () => {
     return (
         <div className="info-box">
-            <h1>Welcome!</h1>
-            <p>
-            I'm an experienced software engineer with a passion for making. 
-            Throughout my journey, I've garnered a diverse skillset set of technologies used in fields such data analytics to web and mobile development. 
-            These skills include mastery in Python, JavaScript, React, Node.js and Ruby on Rails with many more continuously being added.
-            </p>
-            <p>
-                I've worked and developed projects of varying scale complexity such as simple games, full-stack websites and data tools used for company metrics.
-            </p>
-            <p>
-            When I'm not building something with code, I'm often building something with my hands such as plastic model kits of giant mechs or learning new things such as foreign languages, science or financial literacy. 
-            Let's connect! 
-            </p>
-            <div className="background-info">
-                <span>Skills: </span>
-                <img className="logo" src={js_logo} alt="JavaScript"/>
-                <img className="logo" src={python_logo} alt="Python"/>
-                <img className="logo" src={react_logo} alt="React.js"/>
-                <img className="logo" src={redux_logo} alt="Redux"/>
-                <img className="logo" src={node_logo} alt="Node.js"/>
-                <img className="logo" src={ruby_logo} alt="Ruby"/>
-                <img className="logo" src={rails_logo} alt="Ruby on Rails"/>
-                <img className="logo" src={mongo_logo} alt="MongoDB"/>
-                <img className="logo" src={postgres_logo} alt="PostgreSQL"/>
-                <img className="logo" src={html_logo} alt="HTML"/>
-                <img className="logo" src={css_logo} alt="CSS"/>
-            </div>
-            <div className="background-info">
-                <span>Alumni: </span>
-                <div id="schools">
-                    <img className="logo" src={aa_logo} alt="App Academy"/>
-                    <img className="logo" src={cal_logo} alt="UC Berkeley"/>
+            <div className="content-box">
+                <h1>Welcome!</h1>
+                <p>
+                I'm an experienced software engineer with a passion for making. 
+                Throughout my journey, I've garnered a diverse skillset set of technologies used in fields such data analytics to web and mobile development. 
+                These skills include mastery in Python, JavaScript, React, Node.js and Ruby on Rails with many more continuously being added.
+                </p>
+                <p>
+                    I've worked and developed projects of varying scale complexity such as simple games, full-stack websites and data tools used for company metrics.
+                </p>
+                <p>
+                When I'm not building something with code, I'm often building something with my hands such as plastic model kits of giant mechs or learning new things such as foreign languages, science or financial literacy. 
+                Let's connect! 
+                </p>
+                <div className="background-info">
+                    <span>Skills: </span>
+                    <img className="logo" src={js_logo} alt="JavaScript"/>
+                    <img className="logo" src={python_logo} alt="Python"/>
+                    <img className="logo" src={react_logo} alt="React.js"/>
+                    <img className="logo" src={redux_logo} alt="Redux"/>
+                    <img className="logo" src={node_logo} alt="Node.js"/>
+                    <img className="logo" src={ruby_logo} alt="Ruby"/>
+                    <img className="logo" src={rails_logo} alt="Ruby on Rails"/>
+                    <img className="logo" src={mongo_logo} alt="MongoDB"/>
+                    <img className="logo" src={postgres_logo} alt="PostgreSQL"/>
+                    <img className="logo" src={html_logo} alt="HTML"/>
+                    <img className="logo" src={css_logo} alt="CSS"/>
+                </div>
+                <div className="background-info">
+                    <span>Alumni: </span>
+                    <div id="schools">
+                        <img className="logo" src={aa_logo} alt="App Academy"/>
+                        <img className="logo" src={cal_logo} alt="UC Berkeley"/>
+                    </div>
                 </div>
             </div>
         </div>

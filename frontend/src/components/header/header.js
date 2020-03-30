@@ -1,10 +1,20 @@
 import React from 'react';
+import { useSpring, animated } from 'react-spring'; 
 import headshot from "./headshot.png";
 import "./header_style.css";
 
 const Header = () => {
+    // react animation
+    const props = useSpring({
+        opacity: 1, 
+        from: {opacity: 0},
+        config: {
+            duration: 4000
+        }
+    });
+    
     return (
-        <header>
+        <animated.header style={props}>
             <div id="pic">
                 <img id="headshot" src={headshot} alt="headpic"/>
             </div>
@@ -20,7 +30,7 @@ const Header = () => {
                     <i className="fab fa-angellist" style={{color:"#fff"}}></i>
                 </a>
             </nav>
-        </header>
+        </animated.header>
     )
 }
 
