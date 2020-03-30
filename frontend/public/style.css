@@ -18,3 +18,7 @@ h1 {
 button {
     outline: none;
 }
+
+i {
+    cursor: pointer;
+}

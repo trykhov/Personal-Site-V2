@@ -46,7 +46,8 @@ const SlideShow = () => {
 
     function dropInfoModal() {
         const infoModal = document.getElementById('info-modal');
-        infoModal.style.display = "block";
+        infoModal.classList.remove("disappear");
+        infoModal.classList.add("appear");
 
         const infoButton = document.getElementById('info-button');
         infoButton.style.display = "none";
@@ -54,7 +55,8 @@ const SlideShow = () => {
 
     function exitModal() {
         const infoModal = document.getElementById('info-modal');
-        infoModal.style.display = "none";
+        infoModal.classList.remove("appear");
+        infoModal.classList.add("disappear");
 
         const infoButton = document.getElementById('info-button');
         infoButton.style.display = "inline";
@@ -69,7 +71,7 @@ const SlideShow = () => {
                 <div className="work-slide fade">
                     <a id="info-button" onClick={() => dropInfoModal()}>&#9432;</a>
                     <img className="work-image" src={currProject.src}/>
-                    <div id="info-modal">
+                    <div id="info-modal" className="disappear">
                         <div className="exit">
                             <i className="fas fa-times" onClick={() => exitModal()}/>
                         </div>

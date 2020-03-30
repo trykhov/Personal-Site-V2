@@ -32,7 +32,7 @@
     padding-top: 1%;
     text-align: right;
     width: 97%;
-}
+} 
 
 .fade {
     -webkit-animation-name: fade;
@@ -80,12 +80,38 @@
 
 #info-modal {
     background-color: rgba(0,0,0,0.5);
-    display: none;
     top: 0;
-    height: 98.3%;
     width: 100%;
     position: absolute;
+    transition: all .5s ease-in-out;
 }
+
+/* slide up and down feature */
+.appear {
+    animation-name: dropdown;
+    animation-duration: 1s;
+    overflow: hidden;
+    height: 98.3%;
+}
+
+@keyframes dropdown {
+    from { height: 0% };
+    to { height: 98.3% };
+}
+
+.disappear {
+    animation-name: dropup;
+    animation-duration: 1s;
+    height: 0;
+    overflow: hidden;
+}
+
+@keyframes dropup {
+    from { height: 98.3% };
+    to { height: 0 };
+}
+/*  */
+
 
 .prev, .next {
     cursor: pointer;
