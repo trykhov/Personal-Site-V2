@@ -1,6 +1,6 @@
 #app {
-  display: flex;
   background-color: rgba(0, 0, 0, 0.25); /* darken background */
+  display: flex;
   height: 100%;
 }
 

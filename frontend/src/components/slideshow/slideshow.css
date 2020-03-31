@@ -148,13 +148,7 @@
 }
 
 .work-image {
-    animation-name: image;
-    animation-duration: 1s;
+    box-sizing: border-box;
     width: 100%; 
 } 
-
-@keyframes image {
-    from { opacity: 0 };
-    to { opacity: 1 };
-}
 

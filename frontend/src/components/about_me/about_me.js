@@ -14,7 +14,7 @@ import react_logo from '../../images/react.png';
 import redux_logo from '../../images/redux.png';
 import ruby_logo from '../../images/ruby.png';
 import aa_logo from '../../images/app-logo.png';
-import cal_logo from '../../images/berkeley-logo.png';
+import cal_logo from '../../images/cal.png';
 
 const AboutMe = () => {
     return (
@@ -30,7 +30,7 @@ const AboutMe = () => {
                     I've worked and developed projects of varying scale complexity such as simple games, full-stack websites and data tools used for company metrics.
                 </p>
                 <p>
-                When I'm not building something with code, I'm often building something with my hands such as plastic model kits of giant mechs or learning new things such as foreign languages, science or financial literacy. 
+                When I'm not building something with code, I'm often building something with my hands such as plastic model of giant mechs or learning new things such as foreign languages, science or financial literacy. 
                 Let's connect! 
                 </p>
                 <div className="background-info">
