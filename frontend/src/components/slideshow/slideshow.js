@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import './slideshow.css';
 
 // images
-import koi_pic from '../../images/koi.png';
-import korra_pic from '../../images/korra.png';
+import koi_pond from '../../images/koi_pond.gif';
+import korra from '../../images/korra.gif';
 import watchuwant from '../../images/watchu_want.png';
 
 const projects = [
@@ -12,7 +12,7 @@ const projects = [
         repo: "https://github.com/trykhov/FishPond",
         title: "Koi Pond Animation",
         desc: 'I developed an animation of koi fishes swimming in a pond using HTML5 canvas, CSS3, JavaScript and P5.js. This project utilizes the P5.js library to create the animations and the vector functions necessary to implement the flocking simulation algorithm that allows the fishes to move in a seemingly "natural" state.',
-        src: koi_pic,
+        src: koi_pond,
         alt: "koi_pond"
     },
     {
@@ -20,7 +20,7 @@ const projects = [
         repo: "https://github.com/trykhov/korra-fsp",
         title: "Korra (Quora Clone)",
         desc: "Korra is a near identical web-clone to the original Quora site. The site is implemented using Ruby on Rails as a backend with PostgreSQL as a database. On the front-end, React is used as a framework that allows users to post questions, answers, and comments.",
-        src: korra_pic,
+        src: korra,
         alt: "korra"
     },
     {
