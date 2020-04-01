@@ -30,6 +30,9 @@ const Header = () => {
                     <i className="fab fa-angellist" style={{color:"#fff"}}></i>
                 </a>
             </nav>
+            <span id="email">Email: 
+                <a href="mailto:khovct@gmail.com">khovct@gmail.com</a>
+            </span>
         </animated.header>
     )
 }
