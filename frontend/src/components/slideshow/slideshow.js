@@ -11,7 +11,7 @@ const projects = [
         live: "https://trykhov.github.io/FishPond/",
         repo: "https://github.com/trykhov/FishPond",
         title: "Koi Pond Animation",
-        desc: 'I developed an animation of koi fishes swimming in a pond using HTML5 canvas, CSS3, JavaScript and P5.js. This project utilizes the P5.js library to create the animations and the vector functions necessary to implement the flocking simulation algorithm that allows the fishes to move in a seemingly "natural" state.',
+        desc: 'I developed an animation of koi fish swimming in a pond using HTML5 canvas, CSS3, JavaScript and P5.js. This project utilizes the P5.js library to create the animations and the vector functions necessary to implement the flocking simulation algorithm that allows the fish to move in a seemingly "natural" state.',
         src: koi_pond,
         alt: "koi_pond"
     },
