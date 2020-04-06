@@ -23,14 +23,14 @@ const AboutMe = () => {
                 <h1>Welcome!</h1>
                 <p>
                 I'm an experienced software engineer with a passion for making. 
-                Throughout my journey, I've garnered a diverse skillset set of technologies used in fields such data analytics to web and mobile development. 
+                Throughout my journey, I've garnered a diverse skillset of technologies used in fields such data analytics, web and mobile app development. 
                 These skills include mastery in Python, JavaScript, React, Node.js and Ruby on Rails with many more continuously being added.
                 </p>
                 <p>
-                    I've worked and developed projects of varying scale complexity such as simple games, full-stack websites and data tools used for company metrics.
+                    I've worked and developed projects of varying scale complexity from simple games to full-stack websites and data tools used for company metrics.
                 </p>
                 <p>
-                When I'm not building something with code, I'm often building something with my hands such as plastic model of giant mechs or learning new things such as foreign languages, science or financial literacy. 
+                When I'm not building something with code, I'm often building something with my hands such as plastic models of giant mechs or learning new things such as foreign languages, science or finance. 
                 Let's connect! 
                 </p>
                 <div className="background-info">
