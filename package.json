@@ -2,11 +2,17 @@
   "name": "personal-site",
   "version": "1.0.0",
   "description": "",
+  "homepage": "http://trykhov.github.io/Personal-Site-v2",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "frontend": "npm start --prefix frontend"
+    "frontend": "npm start --prefix frontend",
+    "predeploy": "cd frontend && npm run build",
+    "deploy": "cd frontend && gh-pages -d build"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  }
 }
