@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring'; 
 import headshot from "./headshot.png";
-import "./header_style.css";
+import "../../stylesheets/header_style.css";
 
 const Header = () => {
     // react animation

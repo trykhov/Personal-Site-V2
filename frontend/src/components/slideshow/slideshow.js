@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './slideshow.css';
+import '../../stylesheets/slideshow.css';
 
 // images
 import koi_pond from '../../images/koi_pond.gif';
