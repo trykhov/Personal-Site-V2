@@ -26,8 +26,7 @@ button:hover {
   animation-delay: 4s;
   animation-duration: 4s;
   overflow: hidden;
-  width: 70%;
-  
+  width: 70%; 
 }
 
 #content-container {

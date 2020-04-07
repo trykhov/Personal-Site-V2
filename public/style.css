@@ -1,3 +1,7 @@
+body {
+    background-image: url("./mountain_background.jpg");
+}
+
 body, html {
     font-family: 'Montserrat', sans-serif;
     height: 100%;
@@ -6,7 +10,6 @@ body, html {
 }
 
 main {
-    background-image: url("./mountain_background.jpg");
     height: 100%;
 }
 
