@@ -1,6 +1,5 @@
 #app {
   background-color: rgba(0, 0, 0, 0.25); /* darken background */
-  display: flex;
   height: 100%;
 }
 
@@ -8,82 +7,93 @@ button:hover {
   cursor: pointer;
 }
 
-.info-box {
-  font-size: 1.25vw;
-  font-weight: 550;
-  height: 85%;
-  margin-bottom: 3%;
-}
-
 #left-side {
-  align-items: center;
-  display: flex;
-  width: 30%;
+  padding: 20px 0;
 }
 
-#right-side {
-  animation-name: right-side;
-  animation-delay: 4s;
-  animation-duration: 4s;
-  overflow: hidden;
-  width: 70%; 
-}
+/* Desktops */
+@media screen and (min-width: 1100px) {
+  #app {
+    display: flex;
+  }
 
-#content-container {
-  align-items: center;
-  animation-name: content-container;
-  animation-duration: 4s;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(3px);
-  display: flex;
-  height: 100%;
-  width: 100%;
-}
+  .info-box {
+    font-size: 1.25vw;
+    font-weight: 550;
+    height: 85%;
+    margin-bottom: 3%;
+  }
 
-#content {
-  align-items: center;
-  animation-duration: 4s;
-  animation-name: right-slide;;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  width: 100%;
-}
+  #left-side {
+    align-items: center;
+    display: flex;
+    width: 30%;
+  }
 
-@keyframes content-container {
-  from {
-    margin-left: 100%;
+  #right-side {
+    animation-name: right-side;
+    animation-delay: 3s;
+    animation-duration: 3s;
+    overflow: hidden;
+    width: 70%; 
+  }
+
+  #content-container {
+    align-items: center;
+    animation-name: content-container;
+    animation-duration: 3s;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    display: flex;
+    height: 100%;
     width: 100%;
   }
-  
-  to {
-    margin-left: 0%;
+
+  #content {
+    align-items: center;
+    animation-duration: 3s;
+    animation-name: right-slide;
+    display: flex;
+    height: 100%;
+    justify-content: center;
     width: 100%;
   }
-}
 
-span {
-  color: #fff;
-  font-size: 1.5vw;
-}
+  @keyframes content-container {
+    from {
+      margin-left: 100%;
+      width: 100%;
+    }
+    
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 
-#splash {
-  animation-name: splash;
-  /* delay until right side is done sliding */
-  animation-delay: 4s;
-  animation-duration: 2s;
-  height: 80%;
-  margin: 0 auto;
-  width: 80%;
-  visibility: hidden;
-}
+  span {
+    color: #fff;
+    font-size: 1.5vw;
+  }
 
-#splash p {
-  color: #fff;
-  margin: 0 0 2%;
-}
+  #splash {
+    animation-name: splash;
+    /* delay until right side is done sliding */
+    animation-delay: 2.5s;
+    animation-duration: 2.5s;
+    height: 80%;
+    margin: 0 auto;
+    width: 80%;
+    visibility: hidden;
+  }
 
-@keyframes splash {
-  from { opacity: 0; }
-  to { opacity: 1; visibility: visible;}
+  #splash p {
+    color: #fff;
+    margin: 0 0 2%;
+  }
+
+  @keyframes splash {
+    from { opacity: 0; }
+    to { opacity: 1; visibility: visible;}
+  }
 }

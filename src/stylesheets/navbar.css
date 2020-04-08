@@ -1,40 +1,43 @@
-button span {
-  margin-left: 7%;
+@media screen and (min-width: 1100px) {
+  button span {
+    margin-left: 7%;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .nav-button {
+    background: rgb(211,211,211, 0.5);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.5vw;
+    font-weight: bold;
+    height: 20%;
+    padding: 2%;
+    text-align: center;
+    text-decoration: none;
+    width: 40%;
+  }
+  
+  .nav-button:nth-child(2) {
+    margin: 0 4%;
+  }
+  
+  .nav-button:hover {
+    background-color:rgb(105,105,105, 0.5);
+  }
+  
+  .active {
+    background-color: #228B22;
+  }
+  
+  .active:hover {
+    background-color: #228B22;
+  }
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.nav-button {
-  background: rgb(211,211,211, 0.5);
-  border: none;
-  border-radius: 4px;
-  color: #fff;
-  display: inline-block;
-  font-size: 1.5vw;
-  font-weight: bold;
-  height: 20%;
-  padding: 2%;
-  text-align: center;
-  text-decoration: none;
-  width: 40%;
-}
-
-.nav-button:nth-child(2) {
-  margin: 0 4%;
-}
-
-.nav-button:hover {
-  background-color:rgb(105,105,105, 0.5);
-}
-
-.active {
-  background-color: #228B22;
-}
-
-.active:hover {
-  background-color: #228B22;
-}

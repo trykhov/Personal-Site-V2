@@ -1,3 +1,23 @@
+#external-links {
+    display: flex;
+    font-size: 35px;
+    justify-content: space-between;
+    margin: 10px auto;
+    width: 200px;
+}
+
+header {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#headshot {
+    width: 150px;
+    height: 150px;
+}
+
 #email a {
     color: #fff;
     margin-left: 2%;
@@ -8,33 +28,35 @@
     color: #228B22;
 }
 
-#external-links {
-    display: flex;
-    font-size: 4vw;
-    justify-content: space-between;
-    margin: 5% auto;
-    width: 60%;
-}
 
-header {
-    color: #fff;
-    font-size: 3vw;
-    font-weight: 600;
-    text-align: center;
-}
-
-header > p {
-    margin: 0 auto;
-    margin-top: 5%;
-}
-
-
-#headshot {
-    width: 60%;
-    height: 60%;
-}
-
-#pic {
-    display: flex;
-    justify-content: center;
+@media screen and (min-width: 1100px) {
+    
+    
+    #external-links {
+        display: flex;
+        font-size: 4vw;
+        justify-content: space-between;
+        margin: 5% auto;
+        width: 60%;
+    }
+    
+    header {
+        font-size: 3vw;
+    }
+    
+    header > p {
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+    
+    
+    #headshot {
+        width: 60%;
+        height: 60%;
+    }
+    
+    #pic {
+        display: flex;
+        justify-content: center;
+    }
 }
