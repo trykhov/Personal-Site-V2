@@ -1,6 +1,7 @@
 #app {
   background-color: rgba(0, 0, 0, 0.25); /* darken background */
   height: 100%;
+  overflow: auto;
 }
 
 button:hover {
@@ -9,6 +10,36 @@ button:hover {
 
 #left-side {
   padding: 20px 0;
+}
+
+#right-side {
+  color: #fff;
+}
+
+#splash {
+  animation-name: splash;
+  /* delay until right side is done sliding */
+  animation-duration: 4s;
+  margin: 0 auto;
+  width: 80%;
+  visibility: hidden;
+}
+
+@keyframes splash {
+  from { opacity: 0; }
+  to { opacity: 1; visibility: visible;}
+}
+
+#content-container {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  display: flex;
+  width: 100%;
+}
+
+.info-box, nav {
+  margin-bottom: 3%;
 }
 
 /* Desktops */
@@ -21,7 +52,6 @@ button:hover {
     font-size: 1.25vw;
     font-weight: 550;
     height: 85%;
-    margin-bottom: 3%;
   }
 
   #left-side {
@@ -90,10 +120,5 @@ button:hover {
   #splash p {
     color: #fff;
     margin: 0 0 2%;
-  }
-
-  @keyframes splash {
-    from { opacity: 0; }
-    to { opacity: 1; visibility: visible;}
   }
 }

@@ -35,9 +35,7 @@ function App() {
               <nav>
                 <button className="nav-button active" onClick={e => activeTab(e, 0)}>About Me</button>
                 <button className="nav-button" onClick={e => activeTab(e, 1)}>Portfolio</button>
-                  <a className="nav-button" href="try_resume.pdf" target="_blank">
-                    Resumé
-                  </a>
+                <a className="nav-button resume" href="try_resume.pdf" target="_blank">Resumé</a>
               </nav>
             </section>
           </div>

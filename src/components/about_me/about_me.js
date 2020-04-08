@@ -49,10 +49,8 @@ const AboutMe = () => {
                 </div>
                 <div className="background-info">
                     <span>Alumni: </span>
-                    <div id="schools">
-                        <img className="logo" src={aa_logo} alt="App Academy"/>
-                        <img className="logo" src={cal_logo} alt="UC Berkeley"/>
-                    </div>
+                    <img className="logo" src={aa_logo} alt="App Academy"/>
+                    <img className="logo" src={cal_logo} alt="UC Berkeley"/>
                 </div>
             </div>
         </div>
