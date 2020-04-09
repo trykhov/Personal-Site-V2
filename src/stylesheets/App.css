@@ -23,7 +23,7 @@ button:hover {
 #splash {
   animation-name: splash;
   /* delay until right side is done sliding */
-  animation-duration: 4s;
+  animation-duration: 5s;
   margin: 0 auto;
   width: 80%;
   visibility: hidden;
@@ -72,6 +72,7 @@ button:hover {
     width: 70%; 
   }
 
+  /* sliding dark side */
   #content-container {
     align-items: center;
     animation-name: content-container;
@@ -85,8 +86,6 @@ button:hover {
 
   #content {
     align-items: center;
-    animation-duration: 3s;
-    animation-name: right-slide;
     display: flex;
     height: 100%;
     justify-content: center;
@@ -114,7 +113,7 @@ button:hover {
     animation-name: splash;
     /* delay until right side is done sliding */
     animation-delay: 2.5s;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
     height: 80%;
     margin: 0 auto;
     width: 80%;

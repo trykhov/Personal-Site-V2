@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // allows for smooth animation
     const splash = document.getElementById('splash');
     splash.style.visibility = "visible";
-  }, 5000)
+  }, 4000)
   
   ReactDOM.render(<App />, root);
 })
