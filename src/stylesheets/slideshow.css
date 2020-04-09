@@ -1,11 +1,68 @@
+.title, .work-links {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.prev, .next {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 3;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.showcase-links {
+    color: #1DA1F2;
+    margin: 0 2%;
+    text-decoration: none;
+}
+
+#slideshow {
+    position: relative;
+}
+
+#slideshow-container {
+    border-radius: 4px;
+}
+
+.title, .desc {
+    color: 	#D3D3D3
+}
+
+.work-image {
+    box-sizing: border-box;
+    width: 100%; 
+} 
+
+.work-slide {
+    position: relative;
+}
+
+@media screen and (max-width: 1050px) {
+    #info-button {
+        display: none;
+    }
+    .exit {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 1100px) {
-    #slideshow-container {
-        border-radius: 4px;
-    }
-    
-    #slideshow {
-        position: relative;
-    }
     
     #circle-container {
         margin: 1% 0;
@@ -54,13 +111,13 @@
     #info-button {
         background-color: rgba(0,0,0,0.1);
         border-radius: 4px;
+        border: none;
         color: #fff;
         cursor: pointer;
         font-size: 1vw;
         font-weight: bold;
         top: 1%;
         right: 1%;
-        padding: 0 1%;
         position: absolute;
         text-align: center;
         transition: background-color 0.6s ease;
@@ -102,13 +159,15 @@
     
     
     .prev, .next {
+        background-color: rgba(0,0,0,0);
+        border: none;
+        color: white;
         cursor: pointer;
         position: absolute;
         top: 50%;
         width: auto;
         margin-top: -22px;
         padding: 16px;
-        color: white;
         font-weight: bold;
         font-size: 18px;
         transition: 0.6s ease;
@@ -116,42 +175,15 @@
         user-select: none;
     }
     
-    .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-    }
-    
     .prev:hover, .next:hover, #info-button:hover {
         background-color: rgba(0,0,0,0.8);
     }
-    
-    .work-slide {
-        position: relative;
-    }
-    
-    .showcase-links {
-        color: #1DA1F2;
-        margin: 0 2%;
-        text-decoration: none;
-    }
+
     
     .showcase-links:hover {
         text-decoration: underline;
     }
     
-    .title, .desc {
-        color: 	#D3D3D3
-    }
-    
-    .title, .work-links {
-        text-align: center;
-        margin-bottom: 2%;
-    }
-    
-    .work-image {
-        box-sizing: border-box;
-        width: 100%; 
-    } 
     
 }
 

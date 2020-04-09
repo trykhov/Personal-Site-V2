@@ -8,6 +8,10 @@ button:hover {
   cursor: pointer;
 }
 
+.content-box h1 {
+  text-align: center;
+}
+
 #left-side {
   padding: 20px 0;
 }

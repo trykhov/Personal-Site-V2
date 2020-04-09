@@ -78,9 +78,12 @@ const SlideShow = () => {
         <div id="slideshow-container">
             {/* slide presentation */}
             <div id="slideshow">
+                {/* arrows */}
+                <button className="prev" onClick={() => traverseProject(-1)}>&#10094;</button>
+                <button className="next" onClick={() => traverseProject(1)}>&#10095;</button>
                 {/* current slide */}
                 <div className="work-slide">
-                    <a id="info-button" onClick={() => dropInfoModal()}>&#9432;</a>
+                    <button id="info-button" onClick={() => dropInfoModal()}>&#9432;</button>
                     <img className="work-image" src={currProject.src} alt={currProject.alt}/>
                     <div id="info-modal" className="disappear">
                         <div className="exit">
@@ -100,8 +103,8 @@ const SlideShow = () => {
                 </div>
 
                 {/* arrows */}
-                <a className="prev" onClick={() => traverseProject(-1)}>&#10094;</a>
-                <a className="next" onClick={() => traverseProject(1)}>&#10095;</a>
+                {/* <button className="prev" onClick={() => traverseProject(-1)}>&#10094;</button>
+                <button className="next" onClick={() => traverseProject(1)}>&#10095;</button> */}
             </div>
             {/* index dots */}
             <div id="circle-container">
