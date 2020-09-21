@@ -9,12 +9,12 @@ function App() {
   // using hooks
   const [index, setIndex] = useState(0);
   
-  function changeComponent(index) {
+  function changeComponent(index: number) {
     if(index === 0) return <AboutMe />
     if(index === 1) return <Portfolio />
   }
 
-  function activeTab(e, index) {
+  function activeTab(e: any, index: number) {
     // shows which tab user is currently on
     setIndex(index);
     const otherNavButtons = document.querySelectorAll(".nav-button");

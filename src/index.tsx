@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // wait a second as the animation is going thru
     // add visibility so it doesn't go away at the end of the animation
     // allows for smooth animation
-    const splash = document.getElementById('splash');
+    const splash = document.getElementById('splash')!;
     splash.style.visibility = "visible";
   }, 4000)
   
