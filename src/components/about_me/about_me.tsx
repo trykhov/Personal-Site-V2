@@ -16,7 +16,7 @@ import ruby_logo from '../../images/ruby.png';
 import aa_logo from '../../images/app-logo.png';
 import cal_logo from '../../images/cal.png';
 
-const AboutMe = () => {
+const AboutMe: React.FC = () => {
     return (
         <div className="info-box">
             <div className="content-box">

@@ -1,7 +1,7 @@
 import React from 'react';
 import SlideShow from '../slideshow/slideshow';
 
-const Portfolio = () => {
+const Portfolio: React.FC = () => {
     return (
         <div className="info-box">
             <div className="content-box">

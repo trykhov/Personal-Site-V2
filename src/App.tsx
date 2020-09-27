@@ -5,7 +5,7 @@ import Portfolio from './components/portfolio/portfolio';
 import './stylesheets/navbar.css';
 import './stylesheets/App.css';
 
-function App() {
+const App: React.FC = () => {
   // using hooks
   const [index, setIndex] = useState(0);
   

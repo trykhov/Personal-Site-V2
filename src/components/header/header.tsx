@@ -3,7 +3,7 @@ import { useSpring, animated } from 'react-spring';
 import headshot from "./headshot.png";
 import "../../stylesheets/header_style.css";
 
-const Header = () => {
+const Header: React.FC = () => {
     // react animation
     const props = useSpring({
         opacity: 1, 

@@ -1,23 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body, html, main {
+    height: 100%;
+    font-size: 2.5vw;
+}
+
 body {
     background-image: url("./mountain_background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-body, html {
-    font-family: 'Montserrat', sans-serif;
-    height: 100%;
-    margin: 0;
-    line-height: 1.5em;
-    overflow: auto;
-}
-
-main {
-    height: 100%;
-}
-
-h1 {
-    color: #fff;
+    box-sizing: border-box;
+    line-height: 2;
 }
 
 button {
